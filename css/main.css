@@ -75,22 +75,23 @@ a:visited {
   text-align: center;
 }
 
-.cool-btns input {
-  background-color: rgba(0,0,0,0.0);
+.btn {
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 6px 18px;
   font-weight: bold;
+  margin-top: 2%;
 }
 
-.cool-btns input.active { color: #3B8FD7; border-color: #3B8FD7; }
-.cool-btns input:focus { outline: 0; }
+#gop {
+  background-color: #FC0000;
+}
+
+#dem {
+  background-color: #00C2FC;
+}
 
 /*D3*/
-
-/*body {*/
-  /*font: 12px sans-serif;*/
-/*}*/
 
 .axis path,
 .axis line {

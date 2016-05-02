@@ -75,12 +75,13 @@ queue()
         California_data = California;
 
         // Update visualization when ready
-        updateVisualization();
+        updateVisualization("Republicans");
     });
 
 var data;
 
-function updateVisualization(error, Florida, NewYork, Ohio, Wisconsin, Nevada, California) {
+function updateVisualization(party) {
+    console.log(party);
     // Get the user-selected state
     select_state = d3.select("#select-box").property("value");
     console.log(select_state);
@@ -107,8 +108,8 @@ function updateVisualization(error, Florida, NewYork, Ohio, Wisconsin, Nevada, C
     }
 
     // Get the user-selected party
-    select_party = d3.select('input[name="party"]:checked').node().value;
-    console.log(select_party);
+    // select_party = d3.select('input[name="party"]:checked').node().value;
+    select_party = party;
 
     color.domain(d3.keys(data[0]).filter(function(key) {
         if (select_party == "Republicans") {
